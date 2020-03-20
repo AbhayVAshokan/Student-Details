@@ -1,0 +1,133 @@
+@font-face {
+  font-family: BubblegumSans;
+  src: url('./assets/fonts/BubblegumSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url('./assets/fonts/Raleway-Regular.ttf');
+}
+
+.body-class {
+  background-image: url(./assets/images/body_background.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 2.4vh;
+  font-family: Raleway;
+  font-weight: 600;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 15vw;
+  background: rgba(48, 25, 52, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 100%;
+}
+
+.main-heading {
+  color: rgba(255, 165, 29);
+  font-family: BubblegumSans;
+  font-weight: bold;
+  font-size: 8vw;
+  height: 100%;
+  margin: 0%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 3vw;
+  height: 10vw;
+  width: 8.62vw;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+}
+
+table {
+  margin-top: 1vh;
+  padding: 2vh;
+  float: left;
+  color: white;
+  text-align: center;
+  display: block;
+  overflow: auto;
+  height: 60vh;
+}
+
+.table-row1 {
+  background-color: rgba(14, 17, 25, 0.5);
+}
+
+.table-row2 {
+  background-color: rgba(42, 52, 70, 0.75);
+}
+
+.table-serialnumber-cell {
+  padding: 2vh 3vw 2vh 5vw
+}
+
+.table-name-cell {
+  padding: 2vh 3vw
+}
+
+.table-address-cell {
+  padding: 2vh 5vw 2vh 3vw
+}
+
+.table-row1:hover,
+.table-row2:hover {
+  background-color: rgba(255, 115, 0, 0.5);
+  opacity: 0.75;
+}
+
+.table-head {
+  background-color: rgba(255, 157, 0, 0.75);
+  padding: 0.75vh 2vh;
+}
+
+.api-buttons {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  height: 100%;
+}
+
+.api-button {
+  margin: 1vh 5vh;
+  padding: 1vh 5vh;
+  font-weight: bold;
+}
+
+.uppercase-button {
+  background-color: rebeccapurple;
+  border: rebeccapurple;
+}
+
+.uppercase-button:hover {
+  background-color: aqua;
+  border: aqua;
+}
+
+.uppercase-button:active {
+  background-color: red;
+  border: red;
+}
+
+@media screen and (max-width: 800px) {
+  .main-container {
+    flex-direction: column;
+  }
+}
