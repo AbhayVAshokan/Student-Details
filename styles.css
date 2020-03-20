@@ -5,6 +5,7 @@
 
 @font-face {
   font-family: Raleway;
+  font-weight: 100;
   src: url('./assets/fonts/Raleway-Regular.ttf');
 }
 
@@ -19,9 +20,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  font-size: 2.4vh;
+  font-size: 1.5em;
   font-family: Raleway;
-  font-weight: 600;
 }
 
 .jumbotron {
@@ -37,7 +37,7 @@
 .main-heading {
   color: rgba(255, 165, 29);
   font-family: BubblegumSans;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 8vw;
   height: 100%;
   margin: 0%;
@@ -62,9 +62,27 @@ table {
   float: left;
   color: white;
   text-align: center;
+}
+
+thead {
+  display: table;
+  width: 100%;
+}
+
+.table-serialnumber-cell {
+  width: 5.7vw;
+  font-size: 0.75em;
+}
+
+.table-address-cell {
+  width: 22.5vw;
+}
+
+tbody {
   display: block;
+  height: 54vh;
   overflow: auto;
-  height: 60vh;
+  width: 100%;
 }
 
 .table-row1 {
@@ -75,16 +93,8 @@ table {
   background-color: rgba(42, 52, 70, 0.75);
 }
 
-.table-serialnumber-cell {
-  padding: 2vh 3vw 2vh 5vw
-}
-
-.table-name-cell {
-  padding: 2vh 3vw
-}
-
-.table-address-cell {
-  padding: 2vh 5vw 2vh 3vw
+td {
+  padding: 0.5em 3vw
 }
 
 .table-row1:hover,
@@ -95,7 +105,7 @@ table {
 
 .table-head {
   background-color: rgba(255, 157, 0, 0.75);
-  padding: 0.75vh 2vh;
+  padding: 0.75em 2vh;
 }
 
 .api-buttons {
@@ -106,28 +116,79 @@ table {
 }
 
 .api-button {
-  margin: 1vh 5vh;
-  padding: 1vh 5vh;
-  font-weight: bold;
+  margin: 1em 2em;
+  padding: 0.75em 3.5em;
+  font-size: 0.9em;
+  font-family: Raleway;
 }
 
-.uppercase-button {
-  background-color: rebeccapurple;
-  border: rebeccapurple;
+#uppercase-button {
+  color: #fff;
+  background-color: #df2033;
+  border-color: #dc3545;
+  border-radius: 0.5em;
 }
 
-.uppercase-button:hover {
-  background-color: aqua;
-  border: aqua;
+#uppercase-button:hover {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
 }
 
-.uppercase-button:active {
-  background-color: red;
-  border: red;
+#uppercase-button:active {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
 }
 
-@media screen and (max-width: 800px) {
+#lowercase-button {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  border-radius: 0.5em;
+}
+
+#lowercase-button:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+#lowercase-button:active {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+  box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+}
+
+@media screen and (max-width: 900px) {
+  .body-class {
+    font-size: 1.2em;
+  }
   .main-container {
     flex-direction: column;
+  }
+  .table-address-cell {
+    width: 35vw;
+  }
+  .table-serialnumber-cell {
+    max-width: 6.5vw;
+    font-size: 0.75em;
+  }
+  td {
+    padding: 0.5em 3vw
+  }
+  .api-button {
+    margin: 0.25em 2em;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1500px) {
+  .table-address-cell {
+    width: 28vw;
+  }
+  .table-name-cell {
+    min-width: 20vw;
   }
 }
