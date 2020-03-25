@@ -104,12 +104,6 @@ td {
   padding: 0.75em 2vh;
 }
 
-.all-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .api-buttons {
   display: flex;
   flex-direction: column;
@@ -164,30 +158,6 @@ td {
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
 }
 
-#add-button {
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  margin: 0.5em 2em;
-  font-size: 0.9em;
-  font-family: Raleway;
-  color: #fff;
-  background-color: #343a40;
-  border-color: #343a40;
-}
-
-#add-button:hover {
-  color: #fff;
-  background-color: #23272b;
-  border-color: #1d2124;
-}
-
-#add-button:focus {
-  background-color: #23272b;
-  background-image: none;
-  border-color: #1d2124;
-}
-
 @media screen and (max-width: 900px) {
   .body-class {
     font-size: 1.2em;
@@ -197,9 +167,6 @@ td {
   }
   td {
     padding: 0.5em 3vw
-  }
-  .all-buttons {
-    flex-direction: row;
   }
   .api-button {
     margin: 0.25em 0.5em;
