@@ -8,6 +8,7 @@ Host a NodeJS/POCO C++ project consisting of details of 10 students. The RESTful
 ####  Step 1: Run the server
     git clone https://github.com/AbhayVAshokan/Student-Details.git
     cd Student-Details/nodeserver
+    npm install
     node app.js
 ####  Step 2: Open index.html
 
